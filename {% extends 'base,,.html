@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Gestão Administrativa</h1>
+<button onclick="logout()" class="btn btn-danger">Logout</button>
+<h2>Usuários</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Usuário</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="users-table">
+        {% for user in users %}
+        <tr>
+            <td>{{ user._id }}</td>
+            <td>{{ user.username }}</td>
+            <td>
+                <button onclick="editUser('{{ user._id }}', '{{ user.username }}')" class="btn btn-warning">Editar</button>
+                <button onclick="deleteUser('{{ user._id }}')" class="btn btn-danger">Excluir</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

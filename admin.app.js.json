@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "665e1b436e4c632ba3cdd049"
+  },
+  "flask": "flask-pymongo"
+},
+{
+  "_id": {
+    "$oid": "665e1b436e4c632ba3cdd04a"
+  },
+  "flask": "flask-bcrypt"
+},
+{
+  "_id": {
+    "$oid": "665e1b436e4c632ba3cdd04b"
+  },
+  "flask": "flask-login"
+}]
